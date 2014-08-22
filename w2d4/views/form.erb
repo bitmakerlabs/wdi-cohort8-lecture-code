@@ -1,0 +1,81 @@
+<!--
+  Requests are made up of two parts:
+  VERB: GET, POST, PUT, PATCH, DELETE
+  NOUN: /films, /films/:id
+
+  GET /films => Get me all the films
+  POST /films => Create a new film
+
+  GET request
+  Appends the parameters to the query string of the URL
+
+  e.g. /films?title=Jaws&country=USA
+
+  POST request
+  Attaches the parameters to the body of the request
+
+  Body of request => title=Jaws&country=USA
+ -->
+
+<form id="film-form" class="form" action="/films" method="get">
+  <h1>Create a new film</h1>
+
+  <div class="field">
+    <label for="film-title">Title</label>
+    <input type="text" id="film-title" name="title" placeholder="e.g. Back to the Future">
+  </div>
+
+  <div class="fieldset-parent">
+    <fieldset class="field">
+      <legend>Studio</legend>
+      <label><input type="radio" name="studio" value="Action">Action</label>
+      <label><input type="radio" name="studio" value="Adventure" checked="checked">Adventure</label>
+      <label><input type="radio" name="studio" value="Comedy">Comedy</label>
+      <label><input type="radio" name="studio" value="Drama">Drama</label>
+      <label><input type="radio" name="studio" value="Horror">Horror</label>
+    </fieldset>
+
+    <fieldset class="field">
+      <legend>Genre</legend>
+      <label><input type="checkbox" name="genre[]" value="Action">Action</label>
+      <label><input type="checkbox" name="genre[]" value="Adventure" checked="checked">Adventure</label>
+      <label><input type="checkbox" name="genre[]" value="Comedy">Comedy</label>
+      <label><input type="checkbox" name="genre[]" value="Drama">Drama</label>
+      <label><input type="checkbox" name="genre[]" value="Horror">Horror</label>
+    </fieldset>
+
+  </div>
+
+  <div class="field">
+    <label for="film-year">Year</label>
+    <input id="film-year" name="year" type="number">
+  </div>
+
+  <div class="field">
+    <label for="film-url">IMDB URL</label>
+    <input id="film-url" name="url" type="url">
+  </div>
+
+  <div class="field">
+    <label for="film-description">Description</label>
+    <textarea name="description" id="film-description" cols="30" rows="10">DEFAULT TEXT</textarea>
+  </div>
+
+  <div class="field">
+    <label for="film-rating">Rating</label>
+    <select name="rating" id="film-rating">
+      <option value="0">Choose a rating</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+  <!-- <input type="submit" value="GO!"> -->
+  <button type="submit">
+    <h1>GO!</h1>
+  </button>
+</form>
+

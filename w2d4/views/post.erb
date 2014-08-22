@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML & CSS Fundamentals</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="HTML & CSS Fundamentals">
+  </head>
+  <body>
+<!--
+    OLD SCHOOL, NON-SEMANTIC LAYOUT
+    <div id="main">
+      <div id="header"></div>
+      <div id="sidebar"></div>
+      <div id="content"></div>
+      <div id="footer"></div>
+    </div>
+ -->
+
+    <main>
+      <header>
+        <h1>HTML & CSS Fundamentals</h1>
+        <h2>Brought to you by Bitmaker Labs</h2>
+      </header>
+
+      <nav id="site-nav" class="navigation">
+        <ul>
+          <li class="menu-item">Menu Item 01</li>
+          <li class="menu-item">Menu Item 02</li>
+          <li class="menu-item">Menu Item 03</li>
+          <li class="menu-item">Menu Item 04</li>
+        </ul>
+      </nav>
+
+      <aside id="sidebar"></aside>
+
+      <section id="content">
+        <%= yield %>
+      </section>
+
+      <footer>
+        <nav>
+          <ul>
+            <li class="menu-item">Menu Item 01</li>
+            <li class="menu-item">Menu Item 02</li>
+            <li class="menu-item">Menu Item 03</li>
+            <li class="menu-item">Menu Item 04</li>
+          </ul>
+        </nav>
+      </footer>
+    </main>
+
+    <script></script>
+  </body>
+</html>
