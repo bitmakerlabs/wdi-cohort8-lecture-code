@@ -1,0 +1,32 @@
+<!--
+<form action="/films" method="POST" class="form-pretty">
+
+</form>
+ -->
+<h1>New Film</h1>
+
+<%= link_to "Film Listing", films_path %>
+<%= link_to "Back to the Future", film_path(@bttf) %>
+
+<%= render 'form' %>
+
+
+<%= form_tag(:controller => "films", :action => "new") do %>
+  <!-- <input type="text" name="title" id=""> -->
+  <%= label_tag :title %>
+  <%= text_field_tag :film_title %>
+
+  <%= label_tag :year %>
+  <%= number_field_tag :year %>
+
+  <%= label_tag do %>
+    <%= check_box_tag :genre, "Drama" %>
+    Drama
+  <% end %>
+
+  <%= submit_tag %>
+<% end %>
+
+<% if params %>
+  <%= params %>
+<% end %>

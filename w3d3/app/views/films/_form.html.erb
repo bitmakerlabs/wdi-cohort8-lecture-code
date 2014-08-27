@@ -1,0 +1,15 @@
+<%= form_for @film do |form_builder| %>
+  <%= form_builder.label :title, "Film Title" %>
+  <%= form_builder.text_field :title %>
+
+  <%= form_builder.label :director %>
+  <%= form_builder.text_field :director %>
+
+  <%= form_builder.label :title, "Film Title" %>
+  <%= form_builder.number_field :year %>
+
+  <%= form_builder.label :synopsis %>
+  <%= form_builder.text_area :synopsis %>
+
+  <%= form_builder.submit %>
+<% end %>
