@@ -13,9 +13,9 @@ Today we'll learn the various ways to create a form in Rails.
 
 ## READ THE DOCS
 - While working in Rails, it's a very good idea to keep the following three tabs open at all times, you will constantly need to refer to them:
-  - (Rails Guides)[http://guides.rubyonrails.org]
-  - (Rails API)[http://api.rubyonrails.org]
-  - (Ruby Docs)[http://ruby-doc.org]
+  - [Rails Guides](http://guides.rubyonrails.org)
+  - [Rails API](http://api.rubyonrails.org)
+  - [Ruby Docs](http://ruby-doc.org)
 
 
 ## Forms recap
@@ -67,10 +67,10 @@ Today we'll learn the various ways to create a form in Rails.
 - Forbids doing mass-assignment on a model from the params hash (i.e. Film.create(params[:film]))
 - Instead, we have to whitelist the parameters that are allowed to be assigned to our model
   - This way malicious users can't add whatever they want to your model
-- Full details can be found in the (strong_parameters gem page)[https://github.com/rails/strong_parameters]
+- Full details can be found in the [strong_parameters gem page](https://github.com/rails/strong_parameters)
 
 
 ### Further Reading
 
-- (Rails Form Helpers)[http://guides.rubyonrails.org/form_helpers.html]
-- (Rails Routing from the Outside In)[http://guides.rubyonrails.org/routing.html]
+- [Rails Form Helpers](http://guides.rubyonrails.org/form_helpers.html)
+- [Rails Routing from the Outside In](http://guides.rubyonrails.org/routing.html)
