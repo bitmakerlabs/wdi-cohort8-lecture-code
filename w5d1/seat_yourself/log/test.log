@@ -1,0 +1,338 @@
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "restaurants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "capacity" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140908142046')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:28:40.422438"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:28:40.422438"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:30:03.068861"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:30:03.068861"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:34:21.997698"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:34:21.997698"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:34:22.003059"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:34:22.003059"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:35:38.597144"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:35:38.597144"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:35:38.601266"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:35:38.601266"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:36:41.641239"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:36:41.641239"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:36:41.646092"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:36:41.646092"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:39:37.162563"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:39:37.162563"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:39:37.167594"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:39:37.167594"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:39:37.169497"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:39:37.169497"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:39:56.392387"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:39:56.392387"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:39:56.397433"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:39:56.397433"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:39:56.399141"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:39:56.399141"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:41:41.966686"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:41:41.966686"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:41:41.971170"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:41:41.971170"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:41:41.972636"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:41:41.972636"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "restaurant_id" integer, "party_size" integer, "start_time" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "restaurants"[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "restaurants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "capacity" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140908144211')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:43:22.359652"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:43:22.359652"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:43:22.364613"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:43:22.364613"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:43:22.367031"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:43:22.367031"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:43:22.368936"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:43:22.368936"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:44:48.240157"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:44:48.240157"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:44:48.244382"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:44:48.244382"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:44:48.246296"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:44:48.246296"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:44:48.248395"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:44:48.248395"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-08 14:44:48.264495"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 14:44:48.264495"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:45:16.683138"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:45:16.683138"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:45:16.688189"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:45:16.688189"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:45:16.690197"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:45:16.690197"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:45:16.692001"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:45:16.692001"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-08 14:45:16.704828"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 14:45:16.704828"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:50:53.412914"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:50:53.412914"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:50:53.417608"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:50:53.417608"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:50:53.419820"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:50:53.419820"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:50:53.421884"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:50:53.421884"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-08 14:50:53.436469"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 14:50:53.436469"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:50:53.439646"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:50:53.439646"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-08 14:50:53.440941"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 14:50:53.440941"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:54:39.003727"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:54:39.003727"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?  [["restaurant_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:54:39.022639"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:54:39.022639"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?  [["restaurant_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:54:39.024872"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:54:39.024872"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?  [["restaurant_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 14:54:39.027237"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:54:39.027237"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-08 14:54:39.032224"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 14:54:39.032224"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 14:54:39.036074"], ["name", "Canoe"], ["updated_at", "2014-09-08 14:54:39.036074"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-08 14:54:39.037301"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 14:54:39.037301"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?  [["restaurant_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 15:00:54.412128"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:00:54.412128"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?  [["restaurant_id", 1]]
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 15:00:54.424592"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:00:54.424592"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?  [["restaurant_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 15:00:54.427110"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:00:54.427110"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?  [["restaurant_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 15:00:54.429487"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:00:54.429487"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-08 15:00:54.434801"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 15:00:54.434801"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 15:00:54.437928"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:00:54.437928"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-08 15:00:54.438984"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 15:00:54.438984"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?  [["restaurant_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 15:00:54.440988"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:00:54.440988"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-08 15:00:54.441993"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 15:00:54.441993"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 15:02:29.444203"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:02:29.444203"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ? AND "reservations"."start_time" = '2014-09-08 18:00:00.000000'  [["restaurant_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 15:02:29.464050"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:02:29.464050"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ? AND "reservations"."start_time" = '2014-09-08 18:00:00.000000'  [["restaurant_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 15:02:29.466954"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:02:29.466954"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ? AND "reservations"."start_time" = '2014-09-08 18:00:00.000000'  [["restaurant_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 15:02:29.470206"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:02:29.470206"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-08 15:02:29.477389"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 15:02:29.477389"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ? AND "reservations"."start_time" = '2014-09-08 18:00:00.000000'[0m  [["restaurant_id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["capacity", 100], ["created_at", "2014-09-08 15:02:29.480936"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:02:29.480936"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-08 15:02:29.482144"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 15:02:29.482144"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ? AND "reservations"."start_time" = '2014-09-08 18:00:00.000000'  [["restaurant_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("capacity", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["capacity", 100], ["created_at", "2014-09-08 15:02:29.484418"], ["name", "Canoe"], ["updated_at", "2014-09-08 15:02:29.484418"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "reservations" ("created_at", "party_size", "restaurant_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-08 15:02:29.485603"], ["party_size", 10], ["restaurant_id", 1], ["start_time", "2014-09-08 18:00:00.000000"], ["updated_at", "2014-09-08 15:02:29.485603"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("reservations"."party_size") AS sum_id FROM "reservations"  WHERE "reservations"."restaurant_id" = ? AND "reservations"."start_time" = '2014-09-08 19:00:00.000000'[0m  [["restaurant_id", 1]]
+  [1m[35m (0.3ms)[0m  rollback transaction
